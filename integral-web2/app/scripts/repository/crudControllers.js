@@ -10,7 +10,7 @@ define(['app','lodash','jquery'], function (integralApp, _, $) {
     }]);
     integralApp.controller('RepositoryEntitySearchCtrl', ['$scope', '$stateParams', '$window', 'flash', function($scope, $stateParams, $window, flash){
         $scope.selectedItems = [];
-
+		
         $scope.view = function() {
             $.each($scope.selectedItems, function(index, selection) {
                 $window.open("#" + selection.getViewLink() , "_blank");
@@ -32,7 +32,7 @@ define(['app','lodash','jquery'], function (integralApp, _, $) {
         }, function(error) {
             flash.info = Localization.resolve($scope.entityDomainClass.name + ".notfound", "Not found " + $scope.entityDomainClass.name);
         });
-        $scope.title = Localization.resolve($scope.entityDomainClass.name  + '.view');
+        $scope.entityTitle = Localization.resolve($scope.entityDomainClass.name  + '.view');
         $scope.actions = "edit,remove";
         $scope.$on('mFormActions:delete', function() {
             $location.path($scope[$scope.entityName].getSearchLink());
@@ -42,7 +42,7 @@ define(['app','lodash','jquery'], function (integralApp, _, $) {
     integralApp.controller('RepositoryEntityCreateCtrl', ['$scope', '$injector', 'flash','Localization','$location', function($scope, $injector, flash, Localization, $location){
         $scope.repository = $scope.entityDomainClass.getRepository();
         $scope[$scope.entityName] = $scope.entityDomainClass.clone();
-        $scope.title = Localization.resolve($scope.entityName  + '.create');
+        $scope.entityTitle = Localization.resolve($scope.entityName  + '.create');
         $scope.actions = "createOrSave";
         $scope.$on('mFormActions:create', function(event, entity) {
             $location.path(entity.getViewLink());
@@ -59,7 +59,7 @@ define(['app','lodash','jquery'], function (integralApp, _, $) {
         $scope.repository.get($stateParams.id).then(function(entity) {
             $scope[$scope.entityName] = entity;
         });
-        $scope.title = Localization.resolve($scope.entityName  + '.edit');
+        $scope.entityTitle = Localization.resolve($scope.entityName  + '.edit');
         /*
 		$scope.datepickers = {
 			membershipDate: false,
