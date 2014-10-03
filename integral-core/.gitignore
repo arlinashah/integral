@@ -1,0 +1,9 @@
+#Ignore target directory - https://github.com/github/gitignore/blob/master/Maven.gitignore
+target/
+#Eclipse
+.settings/
+.classpath
+.project
+#Application
+solr/
+

@@ -1,4 +1,4 @@
-package my.com.myriadeas.integral.data.solr.domain;
+package my.com.myriadeas.integral.index.domain.model;
 
 public interface SearchableVuFindMarc {
 	String ID = "id";
