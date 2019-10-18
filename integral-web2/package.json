@@ -2,7 +2,7 @@
   "name": "integralweb",
   "version": "0.0.0",
   "dependencies": {
-    "bower": "~1.2.8",
+    "bower": "~1.8.8",
     "bower-requirejs": "~0.10.0"
   },
   "devDependencies": {
