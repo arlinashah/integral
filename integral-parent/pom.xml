@@ -43,7 +43,7 @@
 		<json-simple.version>1.1.1</json-simple.version>
 		<junit.version>4.8.1</junit.version>
 		<marc4j.version>2.6.1-SNAPSHOT</marc4j.version>
-		<mysql.version>5.1.6</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<mystic.version>0.0.1-SNAPSHOT</mystic.version>
 		<objectlab.kit.date.version>1.2.0</objectlab.kit.date.version>
 		<poi.version>3.9</poi.version>
