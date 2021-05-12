@@ -56,7 +56,7 @@
 		<spring-data-rest-webmvc.version>2.0.1.RELEASE</spring-data-rest-webmvc.version>
 		<spring-security.version>3.2.3.RELEASE</spring-security.version>
 		<spring-security-javaconfig.version>1.0.0.M1</spring-security-javaconfig.version>
-		<solr.version>4.6.1</solr.version>
+		<solr.version>8.8.2</solr.version>
 		<solrmarc-transformer.version>2.4</solrmarc-transformer.version>
 		<yeoman-maven.version>0.2</yeoman-maven.version>
 		<yoga.version>1.0.5</yoga.version>
