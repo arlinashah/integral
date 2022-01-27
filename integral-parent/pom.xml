@@ -60,7 +60,7 @@
 		<solrmarc-transformer.version>2.4</solrmarc-transformer.version>
 		<yeoman-maven.version>0.2</yeoman-maven.version>
 		<yoga.version>1.0.5</yoga.version>
-		<xerces.version>2.8.0</xerces.version>
+		<xerces.version>2.12.2</xerces.version>
 		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
